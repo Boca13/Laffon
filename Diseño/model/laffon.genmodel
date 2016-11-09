@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Laffon/src" modelPluginID="Laffon" modelName="Laffon"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>laffon.ecore</foreignModel>
+  <genPackages prefix="Laffon" disposableProviderFactory="true" ecorePackage="laffon.ecore#/">
+    <nestedGenPackages prefix="NewPackage1" disposableProviderFactory="true" ecorePackage="laffon.ecore#//Laffon.Modelos">
+      <genClasses ecoreClass="laffon.ecore#//Laffon.Modelos/Usuario">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Usuario/id"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Usuario/nombre"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Usuario/ubicacion"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Usuario/email"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference laffon.ecore#//Laffon.Modelos/Usuario/grupo"/>
+      </genClasses>
+      <genClasses ecoreClass="laffon.ecore#//Laffon.Modelos/Grupo">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference laffon.ecore#//Laffon.Modelos/Grupo/privilegios"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Grupo/nombre"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference laffon.ecore#//Laffon.Modelos/Grupo/usuario"/>
+      </genClasses>
+      <genClasses ecoreClass="laffon.ecore#//Laffon.Modelos/Impresora">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Impresora/nombre"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Impresora/ubicacion"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Impresora/color"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Impresora/costeBN"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Impresora/costeColor"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Impresora/ip"/>
+      </genClasses>
+      <genClasses ecoreClass="laffon.ecore#//Laffon.Modelos/Trabajo">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Trabajo/nombre"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference laffon.ecore#//Laffon.Modelos/Trabajo/usuario"/>
+      </genClasses>
+      <genClasses ecoreClass="laffon.ecore#//Laffon.Modelos/Privilegios">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference laffon.ecore#//Laffon.Modelos/Privilegios/impresora"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Privilegios/color"/>
+      </genClasses>
+      <genClasses ecoreClass="laffon.ecore#//Laffon.Modelos/Cuota">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Cuota/copiasMensualesBN"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute laffon.ecore#//Laffon.Modelos/Cuota/copiasMensualesColor"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>
