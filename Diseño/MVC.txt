@@ -1,0 +1,17 @@
+MODELOS:
+- Usuario
+- Grupo
+- Impresora
+- Trabajo
+- Privilegios
+VISTAS:
+- Login
+- Trabajos de usuario
+- Interfaz de administrador:
+	· Edición de impresoras
+	· Edición de grupos de impresoras?
+	· Edición de usuarios y privilegios
+	· Edición de grupos
+	· Edición de trabajos pendientes
+	· Estadísticas de uso y gastos
+CONTROLADORES:
